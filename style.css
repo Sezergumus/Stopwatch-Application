@@ -62,17 +62,22 @@ section {
   box-shadow: inset 5px 5px 20px #bebebe,
               inset -5px -5px 20px #ffffff;
 }
+
 footer{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     width: 100%;
-}
-
-p{
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
     text-align: center;
 }
 
 a{
     text-decoration: none;
-    color: #34568B;
+    color: crimson;
 }
+
